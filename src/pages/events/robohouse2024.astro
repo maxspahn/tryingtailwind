@@ -1,0 +1,63 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Brands from '~/components/widgets/Brands.astro';
+
+import { YouTube } from 'astro-embed';
+
+const metadata = {
+  title: 'Startup Landing Page',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="European Robotics Forum 2022"
+    actions={[
+      { text: 'Learn more', href: 'https://lp.franka.de/news/franka-emika-hosts-hackathon-at-european-robotics-forum-2022' },
+    ]}
+  >
+    <Fragment slot="title">
+      The <span class="text-accent dark:text-white highlight">Platonics</span>
+      were born and won the first competition
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      During that competition, the team was able to demonstrate the capabilities
+      of the approach in combination with the hardware. The task consisted of 
+      several insertion tasks and key turning tasks.
+    </Fragment>
+
+    <Fragment slot="image">
+      <YouTube id="eqpV09Kuc_o" title="European Robotics Forum 2022: The Franka Emika Hackathon Manipulation Challenge" />
+      <style is:inline>
+        lite-youtube {
+          margin: 0 auto;
+          max-width: 100%;
+        }
+      </style>
+    </Fragment>
+  </Hero>
+
+  <!-- Features2 Widget ************** -->
+
+  <Features2
+    title="About the competition"
+    subtitle="From Franka Emika: &quotThe European Robotics Forum 2022 in Rotterdam, NL is the most influential meeting of the robotics community in Europe - and therefore a perfect fit for our Franka Emika Robot! We really enjoyed engaging with local university students, as we hosted the Tactile Manipulation Benchmark Hackathon Challenge. Robotics up close, that's how we like to inspire to the engineers and researchers from tomorrow! Congrats to TU Delft for mastering the challenge!&quot"
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Features2>
+
+</Layout>

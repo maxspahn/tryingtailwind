@@ -1,7 +1,7 @@
 {
-  "name": "@onwidget/astrowind",
+  "name": "@onwidget/platonics",
   "version": "1.0.0-beta.48",
-  "description": "AstroWind: A free template using Astro 4.0 and Tailwind CSS. Astro starter theme.",
+  "description": " Platonics: Making robots deployable by everyone.",
   "type": "module",
   "private": true,
   "engines": {

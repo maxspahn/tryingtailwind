@@ -1,5 +1,5 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
+import Layout from '../layouts/PageLayout.astro';
 
 import Hero from '~/components/widgets/Hero.astro';
 import Note from '~/components/widgets/Note.astro';
@@ -11,6 +11,9 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+
+import platonicsLogo from '../assets/images/platonics_logo_3.png'; // Import the image
+
 
 const metadata = {
   title: 'Platonics - Versatile Robotic solutions',
@@ -32,7 +35,7 @@ const metadata = {
       },
       { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/platonics_logo_3.png', alt: 'Platonics Logo' }}
+    image={{ src: platonicsLogo, alt: 'Platonics Logo' }}
   >
     <Fragment slot="title">
       Platonics - bringing versatility to your robotic dreams.

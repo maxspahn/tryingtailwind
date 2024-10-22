@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main  # Adjust if your main branch is different
+  workflow_dispatch:
+
+
 
 jobs:
   build:

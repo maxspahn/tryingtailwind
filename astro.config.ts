@@ -23,7 +23,7 @@ const whenExternalScripts = (items: (() => AstroIntegration) | (() => AstroInteg
 
 export default defineConfig({
   output: 'static',
-  base: process.env.BASE_URL || '/',
+  base: '/tryingtailwind/',
 
   integrations: [
     tailwind({
